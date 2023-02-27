@@ -9,14 +9,15 @@ import zerobase.weather.error.InvalidDate;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
-//    @ExceptionHandler(InvalidDate.class)
-//    public Exception handleInvalidException(){
-//
-//    }
+    @ExceptionHandler(InvalidDate.class)
+    public String handleInvalidException(){
+        return new InvalidDate().getMessage();
+
+    }
 
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     @ExceptionHandler(Exception.class)
-    public Exception handleException(){
+    public Exception handleException() {
         return new Exception();
     }
 }

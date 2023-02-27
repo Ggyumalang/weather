@@ -10,11 +10,11 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface DiaryRepository extends JpaRepository<Diary, Integer>{
+public interface DiaryRepository extends JpaRepository<Diary, Integer> {
 
     List<Diary> findAllByDate(LocalDate date);
 
-    List<Diary> findAllByDateBetween(LocalDate startDate , LocalDate endDate);
+    List<Diary> findAllByDateBetween(LocalDate startDate, LocalDate endDate);
 
     Optional<Diary> getFirstByDate(LocalDate date);
 
