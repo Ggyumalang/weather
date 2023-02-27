@@ -31,9 +31,9 @@
   - 날짜 (date 형식 : yyyy-MM-dd) 
 - 해당 날짜의 모든 일기 삭제
 
-✅ 매일 새벽 1시에 날씨 데이터를 외부 API 에서 받아 DB에 저장 (Scheduler 기능)
+✅ 매일 새벽 1시에 날씨 데이터를 외부 API 에서 받아 DB에 저장 (Spring에 내재된 Scheduler 기능활용)
 
-✅ logback을 이용하여 프로젝트에 로그 남기기
+✅ logback을 이용하여 프로젝트에 로그 남기기 (Spring에 내재된 logback 기능활용)
 
 ✅ swagger을 이용한 API documentation
 
@@ -46,5 +46,3 @@
 - Spring Web
 - MariaDB
 - Swagger
-- Spring Scheduler
-- logback
