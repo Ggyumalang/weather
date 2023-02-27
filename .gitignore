@@ -40,5 +40,5 @@ out/
 logs
 
 ### exercise ###
-/exercise
-/test/java/zerobase/weather/repository
+src/main/java/zerobase/weather/exercise
+src/test/java/zerobase/weather/repository
